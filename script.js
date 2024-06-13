@@ -1,3 +1,4 @@
+// U72955273
 document.getElementById('registrationForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent form from submitting normally
     let name = document.getElementById('name').value;
