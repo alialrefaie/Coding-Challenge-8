@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Registration</title>
-    <script src="script.js" defer></script>
+    <title>Event Registration Portal</title>
 </head>
 <body>
+    <h2>Event Registration Form</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="eventDate">Event Date:</label>
+        <select id="eventDate" name="eventDate" required>
+            <option value="">Select a Date</option>
+            <option value="2024-03-01">March 1, 2024</option>
+            <option value="2024-03-15">March 15, 2024</option>
+            <option value="2024-04-01">April 1, 2024</option>
+        </select><br><br>
+        <label>Meal Preference:</label><br>
+        <input type="checkbox" id="vegetarian" name="preference" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label><br>
+        <input type="checkbox" id="nonVegetarian" name="preference" value="Non-Vegetarian">
+        <label for="nonVegetarian">Non-Vegetarian</label><br>
+        <input type="checkbox" id="vegan" name="preference" value="Vegan">
+        <label for="vegan">Vegan</label><br><br>
+    </form>
+
+    <h3>Registration Details</h3>
+    <div id="registrationDetails"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
